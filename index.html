@@ -1,0 +1,985 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mohammad Rasool | AI/ML Engineer & Full-Stack Developer Portfolio</title>
+
+  <!-- Enhanced SEO Meta Tags -->
+  <meta name="description"
+    content="Mohammad Rasool - AI/ML Engineer & Full-Stack Developer. Specializing in Machine Learning, Deep Learning, NLP, and Web Development. View my portfolio of AI-driven projects and innovative web applications." />
+  <meta name="keywords"
+    content="Mohammad Rasool, AI Engineer, ML Engineer, Full-Stack Developer, Machine Learning, Deep Learning, NLP, Web Development, Python, JavaScript, TensorFlow, React, Portfolio" />
+  <meta name="author" content="Mohammad Rasool" />
+  <meta name="robots" content="index, follow" />
+  <meta name="language" content="English" />
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:title" content="Mohammad Rasool | AI/ML Engineer & Full-Stack Developer" />
+  <meta property="og:description"
+    content="Explore my portfolio showcasing AI/ML projects, web applications, and innovative solutions in machine learning and software development." />
+  <meta property="og:image" content="assets/mr-logo.jpg" />
+  <meta property="og:url" content="https://mohammadrasool.com/" />
+  <meta property="og:type" content="website" />
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Mohammad Rasool | AI/ML Engineer & Full-Stack Developer" />
+  <meta name="twitter:description"
+    content="Explore my portfolio showcasing AI/ML projects, web applications, and innovative solutions in machine learning and software development." />
+  <meta name="twitter:image" content="https://mohammadrasool.com/assets/mr-logo.png" />
+
+  <link rel="icon" type="image/png" href="assets/mr-logo.png" />
+
+  <!-- External CSS -->
+  <link rel="stylesheet" href="css/style.css">
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet" />
+  <link rel="stylesheet" type='text/css' href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
+  <!-- Preload Critical Fonts -->
+  <link rel="preload" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+    as="style" onload="this.onload=null;this.rel='stylesheet'">
+  <noscript>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet">
+  </noscript>
+
+  <link rel="preload" href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700;900&display=swap" as="style"
+    onload="this.onload=null;this.rel='stylesheet'">
+  <noscript>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700;900&display=swap" rel="stylesheet">
+  </noscript>
+
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+  <!-- External JS with async/defer for better performance -->
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/rellax/1.12.1/rellax.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/vanilla-tilt/1.7.2/vanilla-tilt.min.js" defer></script>
+  
+  <!-- EmailJS - Updated to latest version -->
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+  
+  <!-- JSON-LD Schema Markup -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Mohammad Rasool",
+    "url": "https://mohammadrasool.com",
+    "image": "https://mohammadrasool.com/assets/mr-logo.png",
+    "jobTitle": "AI/ML Engineer & Full-Stack Developer",
+    "description": "AI/ML Engineer specializing in Machine Learning, Deep Learning, NLP, and Full-Stack Web Development",
+    "alumniOf": {
+      "@type": "CollegeOrUniversity",
+      "name": "JNTUH University"
+    },
+    "knowsAbout": [
+      "Machine Learning",
+      "Deep Learning",
+      "Natural Language Processing",
+      "Web Development",
+      "Python",
+      "JavaScript",
+      "TensorFlow",
+      "React",
+      "Node.js"
+    ],
+    "sameAs": [
+      "https://github.com/rasoolzo64",
+      "https://www.linkedin.com/in/rasool-mohammad-450381285/"
+    ]
+  }
+  </script>
+</head>
+
+<body>
+  <!-- Scroll Progress Bar -->
+  <div class="scroll-progress-container">
+    <div class="scroll-progress-bar" id="scroll-progress"></div>
+  </div>
+
+  <!-- Back to Top Button -->
+  <button id="back-to-top" aria-label="Back to Top">
+    <i class="fas fa-arrow-up"></i>
+  </button>
+  <!-- Header -->
+  <header>
+    <nav class="main-navbar">
+      <div class="navbar-inner">
+        <!-- Logo Left -->
+        <a class="logo" href="#home"><span class="logo-l">M</span><span class="logo-s">R</span></a>
+        <!-- Nav Links Center -->
+        <ul class="main-nav-links">
+          <li><a class="active" href="#home">Home</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#achievements">Achievements</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <!-- Right: Theme toggle + Socials -->
+        <div class="navbar-right">
+          <button class="theme-toggle-btn" id="theme-toggle" aria-label="Toggle Dark Mode">
+            <span id="theme-icon"></span>
+          </button>
+          <span class="navbar-divider"> | </span>
+          <div class="navbar-socials">
+            <a href="https://github.com/rasoolzo64" target="_blank" aria-label="GitHub"
+              class="navbar-social-link"><i class="fab fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/rasool-mohammad-450381285/" target="_blank" aria-label="LinkedIn"
+              class="navbar-social-link"><i class="fab fa-linkedin-in"></i></a>
+            <a href="mailto:rasoolmohammad2003@gmail.com" aria-label="Email" class="navbar-social-link"><i
+                class="fas fa-envelope"></i></a>
+          </div>
+          <button class="mobile-toggle" id="mobile-menu-toggle">
+            <i class="fas fa-bars"></i>
+          </button>
+        </div>
+      </div>
+      <!-- Mobile Overlay Menu -->
+      <div class="mobile-nav-overlay" id="mobile-nav-overlay">
+        <button class="mobile-close" id="mobile-menu-close"><i class="fas fa-times"></i></button>
+        <ul class="mobile-nav-links">
+          <li><a class="active" href="#home">Home</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#achievements">Achievements</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <!-- Main Content -->
+  <main>
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+      <div class="container">
+        <div class="hero-content">
+          <div class="hero-text" data-aos="fade-up">
+            <h1 class="hero-title" style="font-style: oblique;filter:drop-shadow(2px 2px 2px rgba(40, 8, 217, 0.239));">
+              Hey, I'm <br>
+              <span id="typed" class="gradient-text"></span>
+            </h1>
+            <p style="font-style:oblique">
+              From late-night model tuning to real-world ML deployments and full-stack development, I live deep in the
+              AI/ML grind.<br>
+              Right now? I'm turning ideas into working systems — one line of code at a time.
+            </p>
+            <div class="hero-btns flex flex-col gap-4 sm:flex-row sm:gap-6 mt-6">
+              <a class="btn w-full sm:w-auto" href="#projects">View Projects</a>
+              <a class="btn btn-outline w-full sm:w-auto" href="#contact">Contact Me</a>
+              <a class="btn w-full sm:w-auto" href="assets/Rasool_Mohammad.pdf" target="_blank"
+                aria-label="View Resume">View Resume</a>
+            </div>
+          </div>
+          <div class="hero-image">
+            <div class="profile-card">
+              <img src="assets/Display-picture.jpg" alt="Mohammad Rasool" loading="lazy" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="experience-section">
+      <div class="container">
+        <div class="section-header">
+          <h2> Experience & Education </h2>
+          <p>My professional journey and academic background</p>
+        </div>
+
+        <div class="timeline">
+          <!-- TCS Experience -->
+          <div class="timeline-item">
+            <div class="timeline-icon icon-work">
+              <i class="fas fa-laptop-code"></i>
+            </div>
+            <div class="timeline-content">
+              <div class="timeline-date">
+                <i class="far fa-calendar-alt"></i> Jul 2025 - Present
+              </div>
+              <h3 class="timeline-title">Graduate Engineer Trainee - IT</h3>
+              <div class="timeline-company">TCS iON Job Achiever · Tata Consultancy Services</div>
+              <p class="timeline-description">
+                Job-oriented training program focused on industry-readiness, core IT skills, and emerging technologies.
+              </p>
+              <ul class="timeline-list">
+                <li>Strengthening full-stack development concepts and software engineering fundamentals</li>
+                <li>Building expertise in AI/ML, modern technology stacks, and programming best practices</li>
+                <li>Participating in hands-on projects, mentor sessions, and placement preparation</li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Indian Tec Solutions Internship -->
+          <div class="timeline-item">
+            <div class="timeline-icon icon-work">
+              <i class="fas fa-code"></i>
+            </div>
+            <div class="timeline-content">
+              <div class="timeline-date">
+                <i class="far fa-calendar-alt"></i> Nov 2024 - Apr 2025
+              </div>
+              <h3 class="timeline-title">Software Developer Intern</h3>
+              <div class="timeline-company">Indian Tec Solutions · Mumbai, Maharashtra (Remote)</div>
+              <div class="timeline-details hidden">
+                <ul class="timeline-list">
+                  <li>Built an automated data extraction system that delivered 95% accurate company intelligence</li>
+                  <li>Optimized database architecture to accelerate data retrieval by 80%</li>
+                  <li>Implemented robust error handling ensuring 99% system reliability for continuous operations</li>
+                </ul>
+              </div>
+              <button class="timeline-toggle">Read More <i class="fas fa-chevron-down"></i></button>
+            </div>
+          </div>
+
+          <!-- Education -->
+          <div class="timeline-item">
+            <div class="timeline-icon icon-education">
+              <i class="fas fa-graduation-cap"></i>
+            </div>
+            <div class="timeline-content">
+              <div class="timeline-date">
+                <i class="far fa-calendar-alt"></i> Dec 2021 - Jul 2025
+              </div>
+              <h3 class="timeline-title">B.Tech Computer Science</h3>
+              <div class="timeline-company">JNTUH University College of Engineering Manthani</div>
+              <div class="timeline-grade">CGPA: 6.73/10.0</div>
+              <div class="timeline-details hidden">
+                <p class="timeline-description">
+                  Specialized in core CSE subjects including Data Structures & Algorithms, Operating Systems, DBMS, and
+                  Computer Networks, along with foundational expertise in Machine Learning and Deep Learning.
+                </p>
+                <ul class="timeline-list">
+                  <li>Enhanced problem-solving skills through coding challenges and algorithmic practice</li>
+                  <li>Developed multiple ML and full-stack projects</li>
+                  <li>Member of Coding Club and Technical Committee</li>
+                </ul>
+
+              </div>
+              <button class="timeline-toggle">Read More <i class="fas fa-chevron-down"></i></button>
+            </div>
+          </div>
+
+          <!-- Intermediate Education -->
+          <div class="timeline-item">
+            <div class="timeline-icon icon-education">
+              <i class="fas fa-graduation-cap"></i>
+            </div>
+            <div class="timeline-content">
+              <div class="timeline-date">
+                <i class="far fa-calendar-alt"></i> March 2021
+              </div>
+              <h3 class="timeline-title">Intermediate (12th Grade)</h3>
+              <div class="timeline-company">Hyderabad Institute of Excellence, Vikarabad</div>
+              <div class="timeline-grade">Percentage: 87.4%</div>
+              <div class="timeline-details hidden">
+                <p class="timeline-description">
+                  Completed intermediate education with distinction, achieving 87.4% marks.
+                </p>
+              </div>
+              <button class="timeline-toggle">Read More <i class="fas fa-chevron-down"></i></button>
+            </div>
+          </div>
+
+          <!-- School Education -->
+          <div class="timeline-item">
+            <div class="timeline-icon icon-education">
+              <i class="fas fa-school"></i>
+            </div>
+            <div class="timeline-content">
+              <div class="timeline-date">
+                <i class="far fa-calendar-alt"></i> March 2019
+              </div>
+              <h3 class="timeline-title">Secondary School (10th Grade)</h3>
+              <div class="timeline-company">Excellent EM High School, Bhadradri Kothagudem</div>
+              <div class="timeline-grade">GPA: 9.0/10.0</div>
+              <div class="timeline-details hidden">
+                <p class="timeline-description">
+                  Completed secondary education with excellent academic performance, achieving 9.0 GPA.
+                </p>
+              </div>
+              <button class="timeline-toggle">Read More <i class="fas fa-chevron-down"></i></button>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section-bg">
+      <div class="container">
+        <div class="section-header">
+          <h2>Technical Skills</h2>
+          <p>Everything I've used to build, train, deploy, and experiment like a tech beast 🚀</p>
+        </div>
+        <div class="skills-grid">
+
+          <!-- Languages & Web -->
+          <div class="skill-card">
+            <div class="skill-icon"><i class="fas fa-code"></i></div>
+            <h3 class="skill-title">Languages & Web</h3>
+            <div class="skill-items">
+              <span class="skill-tag" data-tooltip="Advanced Proficiency">Python</span>
+              <span class="skill-tag" data-tooltip="ES6+ Features">JavaScript</span>
+              <span class="skill-tag" data-tooltip="Semantic Markup">HTML5</span>
+              <span class="skill-tag" data-tooltip="Flexbox & Grid">CSS3</span>
+              <span class="skill-tag" data-tooltip="Relational DBs">SQL</span>
+              <span class="skill-tag" data-tooltip="System Programming">Java</span>
+            </div>
+          </div>
+
+          <!-- AI/ML Frameworks -->
+          <div class="skill-card">
+            <div class="skill-icon"><i class="fas fa-brain"></i></div>
+            <h3 class="skill-title">AI/ML Frameworks</h3>
+            <div class="skill-items">
+              <span class="skill-tag">TensorFlow</span>
+              <span class="skill-tag">PyTorch</span>
+              <span class="skill-tag">Keras</span>
+              <span class="skill-tag">Scikit-learn</span>
+              <span class="skill-tag">OpenCV</span>
+              <span class="skill-tag">LangChain</span>
+            </div>
+          </div>
+
+          <!-- Web & Backend -->
+          <div class="skill-card">
+            <div class="skill-icon"><i class="fas fa-globe"></i></div>
+            <h3 class="skill-title">Web & Backend</h3>
+            <div class="skill-items">
+              <span class="skill-tag">Flask</span>
+              <span class="skill-tag">Streamlit</span>
+              <span class="skill-tag">Node.js</span>
+              <span class="skill-tag">React</span>
+              <span class="skill-tag">RESTful APIs</span>
+              <span class="skill-tag">Responsive Design</span>
+            </div>
+          </div>
+
+          <!-- Data Science -->
+          <div class="skill-card">
+            <div class="skill-icon"><i class="fas fa-chart-line"></i></div>
+            <h3 class="skill-title">Data Science</h3>
+            <div class="skill-items">
+              <span class="skill-tag">NumPy</span>
+              <span class="skill-tag">Pandas</span>
+              <span class="skill-tag">Matplotlib</span>
+              <span class="skill-tag">Seaborn</span>
+              <span class="skill-tag">Data Analysis</span>
+              <span class="skill-tag">Data Visualization</span>
+            </div>
+          </div>
+
+          <!-- Technologies -->
+          <div class="skill-card">
+            <div class="skill-icon"><i class="fas fa-cogs"></i></div>
+            <h3 class="skill-title">Technologies</h3>
+            <div class="skill-items">
+              <span class="skill-tag">Machine Learning</span>
+              <span class="skill-tag">Deep Learning</span>
+              <span class="skill-tag">Generative AI</span>
+              <span class="skill-tag">Computer Vision</span>
+              <span class="skill-tag">NLP</span>
+              <span class="skill-tag">MLOps</span>
+            </div>
+          </div>
+
+          <!-- Tools & Platforms -->
+          <div class="skill-card">
+            <div class="skill-icon"><i class="fas fa-tools"></i></div>
+            <h3 class="skill-title">Tools & Platforms</h3>
+            <div class="skill-items">
+              <span class="skill-tag">Git</span>
+              <span class="skill-tag">Docker</span>
+              <span class="skill-tag">AWS</span>
+              <span class="skill-tag">MySQL</span>
+              <span class="skill-tag">PostgreSQL</span>
+              <span class="skill-tag">Power BI</span>
+              <span class="skill-tag">Tableau</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+      <div class="container">
+        <div class="section-header">
+          <h2>Projects</h2>
+          <p>My recent work and technical contributions</p>
+        </div>
+
+        <!-- Project Filters -->
+        <div class="project-filters" data-aos="fade-up">
+          <button class="filter-btn active" data-filter="all">All</button>
+          <button class="filter-btn" data-filter="web">Web Dev</button>
+          <button class="filter-btn" data-filter="ai">AI/ML</button>
+          <button class="filter-btn" data-filter="data">Data Science</button>
+          <button class="filter-btn" data-filter="MLOps">MLOps</button>
+        </div>
+
+        <div class="projects-grid">
+                    <!-- ATS Resume Expert Pro -->
+          <div class="project-card" data-category="ai">
+            <div class="project-content">
+              <h3 class="project-title">ATS Resume Expert Pro</h3>
+              <img src="assets/PROJECTS/ATS Resume Expert Pro.png" alt="">
+
+              <strong class="project-description">
+                A powerful AI-powered resume analysis tool that helps job seekers optimize their resumes
+                for Applicant Tracking Systems (ATS) and improve their chances of getting hired.
+              </strong>
+              <div class="project-problem">
+                Job seekers face high rejection rates due to resumes not being optimized for ATS systems and lacking
+                proper keyword matching
+              </div>
+              <ul class="project-highlights">
+                <li>Advanced AI-powered PDF resume parsing with real-time processing using PyMuPDF and Google Gemini AI
+                </li>
+                <li>Job description matching with ATS compatibility scoring and detailed analysis reports</li>
+                <li>Keyword optimization and professional improvement suggestions based on industry standards</li>
+                <li>Quick scan feature for instant feedback and detailed reports for comprehensive analysis</li>
+                <li>Streamlit-based interactive interface with real-time processing and instant results</li>
+                <li>Multi-dimensional scoring system evaluating content, formatting, keywords, and ATS compatibility
+                </li>
+              </ul>
+              <div class="project-tags">
+                <span class="project-tag">Streamlit</span>
+                <span class="project-tag">Google AI</span>
+                <span class="project-tag">Python</span>
+                <span class="project-tag">PyMuPDF</span>
+                <span class="project-tag">NLP</span>
+              </div>
+              <div class="project-links">
+                <a href="https://ats-resume-tracking-rasoolmohammad.streamlit.app/" target="_blank" class="project-link">
+                  <i> Explore</i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          
+          <!-- Online Event Booking and Management System -->
+          <div class="project-card" data-category="web">
+            <div class="project-content">
+              <h3 class="project-title">Online Event Booking and Management System</h3>
+              <img src="assets/PROJECTS/Online Event Booking and Management System.png" alt="">
+              <strong class="project-description">
+                A framework-agnostic web application with real-time seat tracking, 
+                role-based permissions, and comprehensive reporting for streamlined event operations and booking management.
+
+              </strong>
+              <strong class="project-problem">
+                Event organizers lack integrated tools to manage the entire event lifecycle—from creation and 
+                real-time availability to booking analytics—without relying on complex external frameworks or services.
+              </strong>
+              <ul class="project-highlights">
+                <li>Engineered a full-stack event management system using pure Node.js and vanilla frontend technologies,
+                  eliminating framework dependencies and ensuring lightweight, maintainable code.</li>
+                <li>Architected a secure authentication and authorization system with role-based access control (RBAC), 
+                  enabling distinct workflows for attendees, event organizers, and platform administrators.</li>
+                <li>Implemented real-time seat tracking and inventory management, 
+                  providing live availability updates to prevent overbooking and enhance user trust.</li>
+                <li>Developed a comprehensive admin dashboard with reporting features for event performance, booking trends, 
+                  and revenue analytics, directly supporting data-driven operational decisions.</li>
+                <li>Delivered a fully responsive user interface that ensures a seamless booking and 
+                  management experience across all device types.</li>
+              </ul>
+              <div class="project-tags">
+                <span class="project-tag">Node.js</span>
+                <span class="project-tag">MySQL</span>
+                <span class="project-tag">HTML5</span>
+                <span class="project-tag">CSS3</span>
+                <span class="project-tag">JavaScript</span>
+              </div>
+              <div class="project-links">
+                <a href="https://github.com/rasoolzo64/Online-Event-Booking-and-Management-System" target="_blank" class="project-link">
+                  <i> Explore</i>
+                </a>
+              </div>
+            </div>
+          </div>
+
+
+
+          <!-- Smart Feedback Collection and Analysis System -->
+          <div class="project-card" data-category="web">
+            <div class="project-content">
+              <h3 class="project-title">Smart Feedback Collection and Analysis System</h3>
+              <img src="assets/PROJECTS/Smart-Feedback-Collection-and-Analysis-System.png" alt="">
+              <strong class="project-description">
+                Full-stack web application with real-time sentiment analysis, multi-layer authentication,
+                and interactive analytics dashboard for comprehensive feedback management.
+
+              </strong>
+              <strong class="project-problem">
+                Businesses struggle to efficiently collect, analyze, and act upon customer feedback from multiple
+                channels with real-time insights
+              </strong>
+              <ul class="project-highlights">
+                <li>Built end-to-end feedback management system with multi-layer authentication (User/Admin) and
+                  role-based access control</li>
+                <li>Implemented real-time sentiment analysis using NLTK VADER and TextBlob with emotion detection
+                  capabilities</li>
+                <li>Developed comprehensive admin dashboard with 8+ chart types, data export functionality, and
+                  automated reporting system</li>
+                <li>Integrated secure JWT authentication, session management, and responsive UI for seamless user
+                  experience</li>
+                <li>Enabled bulk feedback processing with automated categorization and priority scoring</li>
+              </ul>
+              <div class="project-tags">
+                <span class="project-tag">Python</span>
+                <span class="project-tag">Flask</span>
+                <span class="project-tag">SQLAlchemy</span>
+                <span class="project-tag">NLTK</span>
+                <span class="project-tag">JavaScript</span>
+                <span class="project-tag">Chart.js</span>
+              </div>
+              <div class="project-links">
+                </a>
+              </div>
+            </div>
+          </div>
+
+
+
+          <!-- AI Interior Designer -->
+          <div class="project-card" data-category="ai">
+            <div class="project-content">
+              <h3 class="project-title">AI Virtual Interior Designer</h3>
+              <img src="assets/PROJECTS/AI Virtual Interior Designer.png" alt="">
+
+              <strong class="project-description">
+                Generative AI application that creates custom room designs and provides real-time material cost
+                estimates.
+              </strong>
+              <div class="project-problem">
+                Homeowners and interior designers need an efficient way to visualize design concepts and estimate costs
+                without physical prototypes
+              </div>
+              <ul class="project-highlights">
+                <li>Built generative AI system using Stable Diffusion for automated interior design generation</li>
+                <li>Implemented real-time cost estimation with material analysis and budget planning features</li>
+                <li>Developed hybrid GPU/CPU computing architecture for optimized performance and faster inference</li>
+                <li>Customizable design parameters including room type, style, color scheme, and furniture layout</li>
+                <li>Streamlit-based web interface with real-time preview and multiple design options generation</li>
+                <li>Integrated cost breakdown by materials, labor, and additional expenses for accurate budgeting</li>
+              </ul>
+              <div class="project-tags">
+                <span class="project-tag">Python</span>
+                <span class="project-tag">PyTorch</span>
+                <span class="project-tag">Stable Diffusion</span>
+                <span class="project-tag">Streamlit</span>
+                <span class="project-tag">Generative AI</span>
+              </div>
+              <div class="project-links">
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Vehicle Insurance MLOps Pipeline - UPDATED -->
+          <div class="project-card" data-category="MLOps">
+            <div class="project-content">
+              <h3 class="project-title">Vehicle Insurance MLOps Pipeline</h3>
+              <img src="assets/PROJECTS/Vehicle Insurance MLOps Pipeline.png" alt="">
+
+              <strong class="project-description">
+                End-to-End MLOps pipeline for vehicle insurance data with automated model deployment,
+                CI/CD integration, and cloud infrastructure management.
+              </strong>
+              <div class="project-problem">
+                Insurance companies need automated, scalable ML pipelines for fraud detection and risk assessment with
+                minimal manual intervention
+              </div>
+              <ul class="project-highlights">
+                <li>Built complete MLOps pipeline with MongoDB data ingestion and AWS cloud deployment (EC2, ECR, S3)
+                </li>
+                <li>Implemented CI/CD automation using GitHub Actions, Docker containerization, and automated testing
+                </li>
+                <li>Developed comprehensive data validation, transformation, and model training workflows with automated
+                  monitoring</li>
+                <li>Integrated model versioning, performance tracking, and automated retraining pipelines</li>
+                <li>End-to-end automation from data ingestion to model deployment with monitoring and alerting systems
+                </li>
+                <li>Scalable architecture supporting multiple models and continuous integration/deployment</li>
+              </ul>
+              <div class="project-tags">
+                <span class="project-tag">Python</span>
+                <span class="project-tag">AWS</span>
+                <span class="project-tag">MongoDB</span>
+                <span class="project-tag">Docker</span>
+                <span class="project-tag">CI/CD</span>
+                <span class="project-tag">MLOps</span>
+              </div>
+              <div class="project-links">
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Crop Yield Prediction Model -->
+          <div class="project-card" data-category="ai">
+            <div class="project-content">
+              <h3 class="project-title">Crop Yield Prediction Model</h3>
+              <img src="assets/PROJECTS/Crop Yield Prediction Model.png" alt="">
+
+              <strong class="project-description">
+                Neural network model that predicts crop yield with 97% accuracy using soil nutrients,
+                environmental conditions, and economic factors for precision agriculture.
+              </strong>
+              <div class="project-problem">
+                Farmers lack accurate tools to predict crop yields, leading to inefficient resource allocation and
+                financial losses
+              </div>
+              <ul class="project-highlights">
+                <li>Developed feed-forward neural network achieving 97% prediction accuracy on agricultural data</li>
+                <li>Integrated multiple input variables including NPK levels, temperature, humidity, rainfall, and pH
+                  values</li>
+                <li>Built scalable solution for precision agriculture with resource optimization recommendations</li>
+                <li>Comprehensive data preprocessing including normalization, feature engineering, and validation</li>
+                <li>Model deployment with Flask web interface for easy access by farmers and agricultural experts</li>
+                <li>Support for multiple crops with customized prediction models based on crop-specific characteristics
+                </li>
+              </ul>
+              <div class="project-tags">
+                <span class="project-tag">Python</span>
+                <span class="project-tag">Keras</span>
+                <span class="project-tag">TensorFlow</span>
+                <span class="project-tag">Neural Networks</span>
+                <span class="project-tag">Machine Learning</span>
+              </div>
+              <div class="project-links">
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- ClearView – Air Quality Insights -->
+          <div class="project-card" data-category="data">
+            <div class="project-content">
+              <h3 class="project-title">
+                ClearView – Interactive Air Quality Insights
+              </h3>
+              <img src="assets/PROJECTS/ClearView – Interactive Air Quality Insights.png" alt="">
+
+              <strong class="project-description">
+                Interactive AQI dashboard with real-time insights and 95% data
+                accuracy.
+              </strong>
+              <div class="project-problem">
+                Lack of accessible, real-time air quality data visualization tools for urban planning and public
+                awareness
+              </div>
+              <ul class="project-highlights">
+                <li>Enabled real-time air quality insights with 95% data accuracy and comprehensive monitoring</li>
+                <li>Streamlined data collection and preprocessing pipelines from multiple environmental sensors</li>
+                <li>Delivered actionable visualizations and user-friendly interface for both technical and non-technical
+                  users</li>
+                <li>Interactive dashboard with historical trends, pollution hotspots, and health impact assessments</li>
+                <li>Multi-platform compatibility with responsive design for desktop and mobile access</li>
+                <li>Real-time alerts and notifications for critical air quality conditions</li>
+              </ul>
+              <div class="project-tags">
+                <span class="project-tag">Python</span>
+                <span class="project-tag">Power BI</span>
+                <span class="project-tag">Streamlit</span>
+                <span class="project-tag">Data Visualization</span>
+              </div>
+              <div class="project-links">
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Achievements & Certifications Section -->
+    <section id="achievements" class="achievements-section">
+      <div class="container">
+        <div class="section-header">
+          <h2>Achievements & Certifications</h2>
+          <p>Recognition, certifications, and leadership milestones</p>
+        </div>
+
+        <div class="achievements-grid">
+
+          <!-- Accenture Forage Simulation -->
+          <div class="achievement-card" data-aos="fade-up">
+            <div class="achievement-icon">
+              <img src="https://cdn.brandfetch.io/id44tJQbVE/theme/dark/logo.svg?c=1dxbfHSJFAPEGdCLU4o5B"
+                style="width: 60px; height: auto; ">
+
+            </div>
+            <h3 class="achievement-title">Accenture North America – Data Analytics Simulation</h3>
+            <p class="achievement-description">
+              Completed Accenture simulation using data analysis, Tableau dashboards, and Excel insights.
+            </p>
+            <a href="https://drive.google.com/file/d/1Cdi86r1w8SFyCPbuUbwwaDqQ5SXPv_gM/view?usp=sharing"
+              target="_blank" class="achievement-link">
+              View Certificate
+              <i class="fas fa-external-link-alt"></i>
+            </a>
+          </div>
+          <!-- Tata Group Forage Simulation -->
+          <div class="achievement-card" data-aos="fade-up" data-aos-delay="100">
+            <div class="achievement-icon">
+              <img src="https://cdn.brandfetch.io/idQga4eIRv/idWcDkSjly.svg?c=1bxid64Mup7aczewSAYMX&t=1646281353331" alt="Tata Logo"
+                style="width: 50px; height: auto; filter: brightness(0) invert(1);">
+            </div>
+            <h3 class="achievement-title">Tata Group – Data	Visualisation:	Empowering	Business with	Effective	Insights</h3>
+            <p class="achievement-description">
+              Completed Tata simulation with AI-driven analytics, EDA, modeling, and strategy.
+
+            </p>
+            <a href="https://drive.google.com/file/d/1VBnhbTEQw13GG8NN-WhDD_tesvUChGl9/view?usp=sharing"
+              target="_blank" class="achievement-link">
+              View Certificate
+              <i class="fas fa-external-link-alt"></i>
+            </a>
+          </div>
+          
+          <!-- Pwc Forage Simulation -->
+          <div class="achievement-card" data-aos="fade-up" data-aos-delay="100">
+            <div class="achievement-icon">
+              <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/PricewaterhouseCoopers_Logo.svg/1580px-PricewaterhouseCoopers_Logo.svg.png?20140815140404" alt="PwC Logo"
+                style="width: 50px; height: auto; filter: brightness(0) invert(1);">
+            </div>
+            <h3 class="achievement-title">PwC Switzerland – Power	BI	Job	Simulation</h3>
+            <p class="achievement-description">
+              Completed PwC simulation with Customer Retention, Diversity & Inclusion
+            </p>
+            <a href="https://drive.google.com/file/d/1LH7XxBmJbvIvQZoVgmih6GFxqE-leUiV/view?usp=sharing"
+              target="_blank" class="achievement-link">
+              View Certificate
+              <i class="fas fa-external-link-alt"></i>
+            </a>
+          </div>
+          
+          <!-- Microsoft Power BI Certification -->
+          <div class="achievement-card" data-aos="fade-up" data-aos-delay="300">
+            <div class="achievement-icon">
+              <i class="fas fa-chart-bar"></i>
+            </div>
+            <h3 class="achievement-title">Microsoft Power BI</h3>
+            <p class="achievement-subtitle">Infosys Springboard</p>
+            <p class="achievement-description">Certified in data visualization and business intelligence using Power BI</p>
+          </div>
+
+          <!-- Cisco Data Analytics Certification -->
+          <div class="achievement-card" data-aos="fade-up" data-aos-delay="400">
+            <div class="achievement-icon">
+              <i class="fas fa-database"></i>
+            </div>
+            <h3 class="achievement-title">Data Analytics Essentials</h3>
+            <p class="achievement-subtitle">CISCO Certification</p>
+            <p class="achievement-description">Certified in data analytics fundamentals and essential skills</p>
+          </div>
+
+          <!-- Leadership Card -->
+          <div class="achievement-card" data-aos="fade-up" data-aos-delay="500">
+            <div class="achievement-icon">
+              <i class="fas fa-users"></i>
+            </div>
+            <h3 class="achievement-title">Coding Club Mentor</h3>
+            <p class="achievement-subtitle">JNTUH University College of Engineering Manthani</p>
+            <p class="achievement-description">
+              Mentored juniors in C and Data Structures; received positive feedback for collaborative teaching.
+            </p>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact creative-contact-section relative overflow-hidden">
+      <!-- Decorative SVG divider -->
+      <div class="absolute top-0 left-0 w-full overflow-hidden leading-[0] rotate-180 z-0">
+        <svg class="relative block w-full h-[100px]" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none"
+          viewBox="0 0 1200 120">
+          <path d="M1200 0L0 0 892.25 114.72 1200 0z" fill="rgba(139, 92, 246, 0.07)"></path>
+        </svg>
+      </div>
+
+      
+  <div class="container mx-auto px-6 max-w-4xl z-10 relative creative-contact-card">
+    <h2 class="creative-contact-heading text-4xl md:text-6xl font-extrabold uppercase tracking-tight text-center">
+      <span class="gradient-text">Let's Connect</span>
+      <span class="creative-underline"></span>
+    </h2>
+    <p class="creative-contact-subtext mt-4 text-lg text-center max-w-xl mx-auto">
+      Whether it's a collab idea, tech banter, or just a random brainwave —
+      drop it below. I don't ghost... unless it's in a codebase.
+    </p>
+
+    <div class="mt-10 flex flex-col md:flex-row items-center justify-center gap-12 max-w-3xl mx-auto">
+      <!-- Lottie Animation -->
+      <div data-aos="fade-up">
+        <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+        <lottie-player src="https://assets1.lottiefiles.com/packages/lf20_tno6cg2w.json" background="transparent"
+          speed="1" loop autoplay style="width: 100%; max-width: 350px; height: auto">
+        </lottie-player>
+      </div>
+
+      <!-- Contact Form -->
+<!-- Contact Form -->
+<form id="contact-form" data-aos="fade-up" data-aos-delay="100"
+  class="w-full md:w-3/4 space-y-6 bg-[var(--card-bg)] p-10 rounded-xl border border-white/10 shadow-xl">
+  <input type="text" name="name" placeholder="Full Name" required
+    class="w-full p-4 border-l-4 rounded-lg bg-transparent text-lg"
+    style="border-color: var(--accent); color: var(--text)" />
+
+  <input type="email" name="email" placeholder="Email Address" required
+    class="w-full p-4 border-l-4 rounded-lg bg-transparent text-lg"
+    style="border-color: var(--accent); color: var(--text)" />
+
+  <textarea name="message" placeholder="Type your thoughts here..." required
+    class="w-full p-4 border-l-4 rounded-lg bg-transparent resize-none text-lg min-h-[140px]"
+    style="border-color: var(--accent); color: var(--text)"></textarea>
+
+  <input type="hidden" name="time" id="email-time" />
+  <!-- Timestamp here -->
+
+  <button type="submit"
+    class="w-full md:w-auto px-6 py-3 font-bold text-white text-lg rounded-md tracking-wide uppercase" style="
+        background: var(--accent);
+        box-shadow: 0 4px 16px rgba(37, 99, 235, 0.13);
+      ">
+    Hit Send 🚀
+  </button>
+</form>
+    </div>
+  </div>
+</section>
+  </main>
+      <!-- Resume Modal -->
+  <div id="resume-modal" class="modal">
+    <div class="modal-content" id="resume-modal-content">
+      <span class="close-modal" id="close-resume-modal">
+        <i class="fas fa-times"></i>
+      </span>
+      <div id="pdf-container">
+        <!-- Desktop: PDF Iframe -->
+        <iframe id="resume-iframe" src="assets/Saketh_Lingerker_8688791352.pdf" width="100%" height="100%"
+          title="Resume PDF Preview" style="border: none;" class="desktop-view">
+        </iframe>
+
+        <!-- Mobile: Single Image Preview -->
+        <div id="mobile-preview" class="mobile-view" style="display: none;">
+          <div style="text-align: center; margin-bottom: 15px;">
+            <h3 style="color: var(--text); margin-bottom: 8px;">Resume Preview</h3>
+            <p style="color: var(--text-secondary); font-size: 0.9rem;">
+              Tap image to zoom • Pinch to zoom out
+            </p>
+          </div>
+          <!-- Single Resume Image -->
+          <img src="assets/Display-picture.jpg" alt="Mohammad Rasool Resume" class="resume-image"
+            loading="lazy"
+            style="width: 100%; border-radius: 8px; cursor: zoom-in; box-shadow: 0 4px 20px rgba(0,0,0,0.1);">
+
+          <div
+            style="text-align: center; margin-top: 20px; padding: 15px; background: rgba(139, 92, 246, 0.1); border-radius: 8px;">
+            <p style="color: var(--text-secondary); margin-bottom: 15px; font-size: 0.9rem;">
+              For the best experience with clickable links:
+            </p>
+            <div style="display: flex; gap: 10px; justify-content: center; flex-wrap: wrap;">
+              <button id="open-pdf-btn" class="btn" style="padding: 10px 20px; font-size: 0.9rem;">
+                Open Full PDF
+              </button>
+              <a href="assets/Rasool_Mohammad.pdf" download class="btn btn-outline"
+                style="padding: 10px 20px; font-size: 0.9rem;">
+                Download PDF
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Desktop Download Button -->
+      <a href="assets/Rasool_Mohammad.pdf" download class="btn mt-4 desktop-view"
+        style="margin-top: 20px; display: inline-block;">
+        Download Resume
+      </a>
+    </div>
+  </div>
+
+  <!-- Project Modal -->
+  <div id="project-modal" class="modal">
+    <div class="modal-content project-modal-content">
+      <span class="close-modal" id="close-project-modal">&times;</span>
+      <div class="modal-body">
+        <h2 id="modal-title">Project Title</h2>
+        <p id="modal-description">Project Description</p>
+        <div class="modal-section" id="modal-problem-section" style="display: none;">
+          <strong>
+            <h3>Problem Statement:</h3>
+          </strong>
+          <p id="modal-problem"></p>
+        </div>
+
+        <div class="modal-section">
+          <strong>
+            <h3>Key Highlights</h3>
+          </strong>
+          <ul id="modal-highlights">
+            <!-- Highlights will be injected here -->
+          </ul>
+        </div>
+
+
+        <div class="modal-section">
+          <strong>
+            <h3>Technologies Used</h3>
+          </strong>
+          <div id="modal-tags" class="project-tags">
+            <!-- Tags will be injected here -->
+          </div>
+        </div>
+
+        <div id="modal-links" class="project-links mt-4">
+          <!-- Links will be injected here -->
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-content">
+      <span class="footer-copy">© 2025 Mohammad Rasool. All rights reserved.</span>
+      <div class="footer-center">
+        <nav class="footer-nav">
+          <a href="#home">Home</a>
+          <span>|</span>
+          <a href="#experience">Experience</a>
+          <span>|</span>
+          <a href="#skills">Skills</a>
+          <span>|</span>
+          <a href="#projects">Projects</a>
+          <span>|</span>
+          <a href="#achievements">Achievements</a>
+          <span>|</span>
+          <a href="#contact">Contact</a>
+        </nav>
+      </div>
+    </div>
+  </footer>
+
+  <!-- External JS (at end for performance) -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="js/script.js"></script>
+</body>
+
+</html>
